@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        script(src='/public/libs/angular.js')
+        script(src='/public/libs/angular-route.js')
+        script(src='/public/javascripts/sendJson.js')
+    body
+        div(ng-app='app')
+            div(ng-controller='sendJsonController')
+                textarea(id="inputFields" rows="4" cols="50")
+                br
+                button(ng-click="senddata")
+                br
+                label(ng-model='status')
+        
+                block content
+       
